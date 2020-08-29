@@ -1,0 +1,108 @@
+*{ /* "*" - abri o comando de CSS*/
+    font-family: Verdana;
+    text-align: center;
+    margin: 0;
+}
+.container{
+    margin: 0 auto; /*margem automatica*/
+    max-width: 1000px; /*resolução da pagina*/
+}
+header {
+    background-color: #09f;
+    color: #fff;
+    padding: 10px;
+}
+nav{
+    background-color: #ccc;
+}
+nav ul{
+    list-style: none; /*estilo da lista*/
+}
+nav ul li{
+    display: inline;
+    text-transform: uppercase; /*Deixa a letra do texto em maiúsculo*/
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    border-bottom: 2px solid #88f;
+    padding: 10px;
+    display: inline-block;
+}
+nav ul li a:hover{
+    background-color: #00f; /*cor de fundo*/
+    color: #fff;
+}
+section{
+    min-height: 500px; /*minimo espaço da pagina*/ 
+}
+footer{
+    border-bottom: 2px solid #000; /*borda na parte de baixo*/
+    border-top: 2px solid #000; /*borda na parte de cima*/
+    padding: 20px;
+}
+figure{
+    display: inline-block; /*colocar os itens lado a lado*/
+    margin: 10px; /*margem externa*/
+    background-color: #000;
+    padding: 15px; /*margem interna*/
+    border-radius: 15px; /*deixar a borda arredondada*/
+    opacity: 0.8; /*deixar o objeto opaco*/
+}
+figure:hover{ /*quando o mouse passar em cima do objeto ficar opaco*/
+    opacity: 1; /* 0=transparente, 1=100% da opacidade*/
+}
+figcaption{
+    color: #fff;
+    font-weight: bold; /*negrito*/
+}
+.titulo{
+    color: #09f;
+    padding: 20px;
+    border-bottom: 2px #09f solid;
+    margin-bottom: 15px;
+}
+table, tr, th, td{ /* usar a virgula para agrupar outros grupos de comandos*/
+     border: solid 1px #000;
+
+}
+table{
+    width: 80%; /* para ocupar um determinado espaço na página*/
+    margin: 0 auto; 
+
+}
+td, th{
+    padding: 10px;
+}
+th{
+    background-color: #09f;
+    color: #fff;
+}
+.listra{
+    background-color: #aaddff;
+}
+tr:hover{
+    opacity: 0.7; /* hover - onde o mouse passa por cima do objeto destacado*/ /*opacity - opacidade do objeto*/
+} fieldset{
+    width: 60%;
+    margin: 0 auto; /*para centralizar objeto*/
+}
+.esquerda{
+    width: 20%;
+    display: inline-block;
+    text-align: right;
+    margin: 5px;
+    vertical-align: top;
+}
+.direita{
+    width: 70%;
+    display: inline-block;
+    text-align: left;
+    margin: 5px;    
+}
+button{
+    background-color: #09f;
+    color:#fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+}

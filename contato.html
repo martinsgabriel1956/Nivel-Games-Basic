@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nível Games</title>
+    <link rel="stylesheet" href="estilo/estilo.css"> <!--ligação entre o arquivo css-->
+    <link rel="icon" href="imagens/favicon.png"> <!--icone da página-->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nível Games</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+                <li><a href="multimidia.html">Multimidia</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="horario.html">Horário</a></li>
+                <li><a href="comochegar.html">Como Chegar</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1 class="titulo">Contato</h1>
+           <form method="post" action="resposta.html"> <!--form method = buscar significado no google :)-->
+              <fieldset> <!--Estilo de formulario-->
+                  <legend>Dados Pessoais</legend> <!--legenda do Formulário-->
+                  <div>
+                      <label for="nome" class="esquerda">Nome:</label> <!--label = etiqueta-->
+                      <input class="direita" type="text" required name= "nome" id="nome" placeholder="Digite seu nome completo"/> <!--caixa de texto--> 
+                  </div> <!--placeholder - texto colocado na caixa--> 
+                  <div>
+                        <label for="email" class="esquerda">e-mail:</label>
+                        <input class="direita" type="email" required id="email" placeholder="Digite aqui o seu e-mail"/>  
+                    </div>  
+                    <div>
+                            <label for="idade" class="esquerda">Idade:</label>
+                            <input class="direita" type="number" min=0 max=150 placeholder="Digite sua idade"/>  
+                    </div>
+                    <div>
+                        <label for="" class="esquerda">Sexo:</label>
+                        <div class="direita">
+                            <input type="radio" id="m" name="sexo" checked /> <!--imput type="radio" - o botão das opções no formulário-->
+                            <label for="m">Masculino</label>
+                            <input type="radio" id="f" name="sexo" /> <!--colocar o name em todas as opções de radio para pode selecionar uma opção no formulário-->
+                            <label for="f">Feminino</label> <!--Checked - deixa uma das opções ja marcadas e deixou a opção obrigatória-->
+                        </div>
+                    </div>  
+                    <div>
+                        <label for="telefone" class="esquerda">Telefone</label>
+                        <input class="direita" type="tel" id="telefone" required placeholder="Digite seu telefone"> <!--type="tel" - pode ser usado para CEP e CPF-->
+                    </div>
+              </fieldset> <!--id = pode criar varios divisões e class - uma unica divisão-->
+              <fieldset>
+                  <legend>Mensagem</legend>
+                  <div>
+                      <label for="assunto" class="esquerda">Assunto</label>
+                      <select class="direita" id="assunto" required> <!--Select - uma caixa com opções de respostas no formulário-->
+                        <option value="">Críticas</option> <!--Option value - as opções dentro do campo de respostas-->
+                        <option value="">Sugestões</option>
+                        <option value="">Compras</option>
+                        <option value="">Outros</option>
+                      </select> 
+                  </div>
+                  <div>
+                      <label for="mensagem" class="esquerda">Mensagem</label>
+                      <textarea style="resize: none"
+                       class="direita" id="mensagem" placeholder="Digite a sua mensagem"></textarea> <!--textarea - area de texto maior-->
+                  </div>
+                  <button type="submit">Enviar</button>
+              </fieldset>
+           </form> <!--Value - valor padrão--> <!--readonly - somente leitura--> <!--required - valor obrigatório-->
+        </section>
+        <footer>
+            <p>Rua Barcelos Domingos, 150</p>
+            <p>(21) 2412-2165</p>
+        </footer>
+    </div>
+</body>
+</html>
